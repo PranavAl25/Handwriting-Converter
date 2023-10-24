@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dysgraphia Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .scroll-down {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: arrow-bounce 1s infinite;
+        }
+
+        .scroll-down span {
+            font-size: 48px;
+        }
+
+        @keyframes arrow-bounce {
+            0%, 100% {
+                transform: translate(-50%, -10px);
+            }
+            50% {
+                transform: translate(-50%, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="black-section">
+        <div class="app-name">
+            <span class="word1">Dysgraphia</span>
+            <span class="word2">Web</span>
+            <span class="word3">App</span>
+        </div>
+        <div class="scroll-down">
+            <span>&#x2193;</span>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#why-matters">Why It Matters</a>
+        <a href="#spread-awareness">Spread Awareness</a>
+        <a href="/upload">Start Conversion</a>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="box-in-box" id="about">
+                <div class="box">
+                    <h2>About the Web App</h2>
+                    <div class="triple-box">
+                        <div class="inner-box">
+                            <h3>Understanding Dysgraphia</h3>
+                            <p>
+                                Dysgraphia is a learning disability that affects a person's ability to write coherently and legibly. It impacts nearly 20%, or 1 in 5, of individuals around the world. Individuals with dysgraphia can struggle with self-esteem and experience social anxiety.
+                            </p>
+                        </div>
+                        <div class="inner-box">
+                            <h3>The Role of Therapy</h3>
+                            <p>
+                                Individuals with dysgraphia often seek therapy to improve their writing skills and cope with the challenges they face. Therapy may involve various approaches such as occupational therapy, handwriting exercises, and cognitive-behavioral techniques. However these treatments are very expensive, hence needing a solution that can let individuals live with dysgraphia lifelong.
+                            </p>
+                        </div>
+                        <div class="inner-box">
+                            <h3>The Dysgraphia Web App</h3>
+                            <p>
+                                The Dysgraphia Web App provides an innovative solution to individuals with dysgraphia. By converting typed text into personalized handwriting, the app helps users create legible notes and written content. This technology aims to empower individuals with dysgraphia and enhance their communication.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="box-in-box" id="how-it-works">
+                <div class="box">
+                    <h2>How It Works</h2>
+                    <div class="triple-box">
+                        <div class="inner-box">
+                            <h3>Uploading Images</h3>
+                            <p>
+                                Users can upload images of their handwriting for both uppercase and lowercase letters. Special character images, such as punctuation marks, are also uploaded. This collection of images forms the basis for creating personalized handwriting.
+                            </p>
+                        </div>
+                        <div class="inner-box">
+                            <h3>Processing the Content</h3>
+                            <p>
+                                The uploaded images are processed to create a library of characters. Each character image is associated with its corresponding letter or special character. This library is used to generate the personalized handwriting.
+                            </p>
+                        </div>
+                        <div class="inner-box">
+                            <h3>Generating Lined Paper</h3>
+                            <p>
+                                The app takes the user's uploaded text content and places each character's handwritten image onto a lined paper background. The result is a downloadable image that resembles handwritten notes on lined paper.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="box-in-box" id="why-matters">
+                <div class="box">
+                    <h2>Why It Matters</h2>
+                    <div class="triple-box">
+                        <div class="inner-box">
+                            <h3>Self-Esteem and Confidence</h3>
+                            <p>
+                                Individuals with dysgraphia often struggle with their self-esteem due to difficulties in handwriting. The ability to create legible notes using personalized handwriting can boost their confidence and sense of self-worth.
+                            </p>
+                        </div>
+                        <div class="inner-box">
+                            <h3>Academic Performance</h3>
+                            <p>
+                                Handwriting difficulties can impact academic performance and test-taking. By using the Dysgraphia Web App, individuals can better express their knowledge and ideas, leading to improved academic outcomes.
+                            </p>
+                        </div>
+                        <div class="inner-box">
+                            <h3>Enhancing Communication</h3>
+                            <p>
+                                Effective communication is essential in various aspects of life. The app enables individuals with dysgraphia to communicate more clearly and confidently, fostering better interactions with peers, educators, and employers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-in-box" id="spread-awareness">
+                <div class="box">
+                    <h2>Spread Awareness</h2>
+                    <div class="triple-box">
+                        <div class="inner-box">
+                            <h3>Sharing the Solution</h3>
+                            <p>
+                                Help spread the word about the Dysgraphia Web App. By sharing the app with friends, family, and educators, you can contribute to raising awareness about dysgraphia and its challenges.
+                            </p>
+                        </div>
+                        <div class="inner-box">
+                            <h3>Empowering the Community</h3>
+                            <p>
+                                Empower individuals with dysgraphia by introducing them to this innovative tool. Encourage them to use the app to improve their handwriting skills and overcome challenges in written communication.
+                            </p>
+                        </div>
+                        <div class="inner-box">
+                            <h3>Advocacy and Support</h3>
+                            <p>
+                                Advocate for individuals with dysgraphia by advocating for better resources and support. By leveraging technology like the Dysgraphia Web App, we can create a more inclusive environment for those with learning disabilities.
+                            </p>
+                            <a href="/upload" class="button">Start Conversion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
