@@ -26,6 +26,7 @@ and written content with ease.
    - style.css
    - images/ (Folder)
      - paper.png
+     - user_uploads/ (Empty Folder)
 5. templates/ (folder)
    - index.html
    - upload.html
