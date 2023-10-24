@@ -1,7 +1,7 @@
-# Dysgraphia-Web-App
+# Handwriting-Converter
 
 ## Overview
-The **Dysgraphia Web App** is a web-based application that assists individuals with dysgraphia by converting typed text into personalized handwritten text that can be printed.
+The **Handwriting-Converter** is a web-based application that assists individuals with dysgraphia by converting typed text into personalized handwritten text that can be printed.
 Dysgraphia is a learning disability that affects a person's ability to write coherently and legibly. This app aims to empower individuals with dysgraphia to create legible notes
 and written content with ease.
 
