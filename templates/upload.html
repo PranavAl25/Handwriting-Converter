@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="upload-title">Upload Alphabet Images and Text File</h1>
+        <p class="upload-info">Please follow the instructions below before uploading:</p>
+        <ul class="instructions">
+            <li><strong>Make sure your images have a full white background, and are cropped to have ONLY the letter/special character/number.</strong></li>
+            <p></p>
+            <li><strong>For each alphabet (A to Z, case-insensitive)</strong>, upload three alphabet image files in your handwriting.</li>
+            <p></p>
+            <li><strong>Naming convention for lowercase alphabet images (three pictures for each letter):</strong> lower_a1.png, lower_a2.png, lower_a3.png, etc.</li>
+            <p></p>
+            <li><strong>Naming convention for uppercase alphabet images (three pictures for each letter):</strong> upper_A1.png, upper_A2.png, upper_A3.png, etc.</li>
+            <p></p>
+            <li><strong>Naming convention for special characters (only one picture for each character) (space, period, comma, semicolon, colon, single apostrophe, double apostrophe and brackets only):</strong> space.png, period.png, comma.png, semicolon.png, colon.png, open_bracket.png, closed_bracket.png, single_apostrophe.png, double_apostrophe.png.</li>
+            <p></p>
+            <li><strong>Naming conventions for numbers (only one picture for each number):</strong> one.png, two.png, three.png, etc.</li>
+            <p></p>
+            <li><strong>Please use the accepted file formats for image files:</strong> .png only.</li>
+            <p></p>
+            <li><strong>Please use the accepted file formats for text file:</strong> .txt only.</li>
+            <p></p>
+            <li><strong>Upload a single text file (.txt) with the content you want to convert into handwriting.</strong></li>
+        </ul>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="upload-container">
+                <label for="alphabet-images" class="upload-label upload-image">
+                    <span class="upload-icon">&#128394;</span>
+                    Choose Alphabet Images
+                    <input type="file" name="alphabet_images" id="alphabet-images" multiple accept=".png, .jpg, .jpeg" class="upload-input">
+                </label>
+                <label for="text-file" class="upload-label upload-text">
+                    <span class="upload-icon">&#128203;</span>
+                    Choose Text File
+                    <input type="file" name="text_file" id="text-file" accept=".txt" class="upload-input">
+                </label>
+            </div>
+            <br>
+            <input type="submit" value="Convert to Lined Paper" class="button">
+        </form>
+    </div>
+</body>
+</html>
