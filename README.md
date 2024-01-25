@@ -18,6 +18,8 @@ and written content with ease.
    * `pip install -r requirements.txt`
 3. Run the App
    * `python app.py`
+  
+***Or go to Visual Studio code, place the files as described below, and run the program by typing "python app.py" into the terminal.***
 
 ## File Structure
 1. app.py
